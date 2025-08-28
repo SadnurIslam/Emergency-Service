@@ -88,7 +88,7 @@ for(const cardInfo of cardsInfo) {
             </div>
             <div class="row mt-auto">
               <div class="row">
-                  <p class=" text-3xl font-bold">${cardInfo.number}</p>
+                  <p class="text-2xl md:text-3xl font-bold">${cardInfo.number}</p>
                   <div class="badge bg-[#F2F2F2] rounded-3xl">${cardInfo.category}</div>
               </div>
               <div class="row flex justify-between gap-2 mt-4">
