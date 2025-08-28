@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- header section -->
-    <header class="px-12 py-5">
+    <header class="sticky bg-white top-0 right-0 left-0 px-12 py-5">
         <nav class="flex flex-col gap-5 md:flex-row justify-between items-center">
             <div class="flex justify-between gap-3">
                 <div class=" w-20 h-20 md:w-[90px] md:h-[90px]">
@@ -19,9 +19,9 @@
                 <p class=" text-[#006747] font-bold text-3xl md:text-4xl">Emergency <br> Service</p>
             </div>
             <div class="flex justify-between gap-5">
-                <div class="badge w-[100px] h-[45px] md:w-[125px] md:h-[55px] bg-[#41ff6b1a] rounded-3xl font-bold text-xl"><span>0</span><img class="h-[60%]" src="./assets/heart.png" alt="favorite icon"></div>
-                <div class="badge w-[100px] h-[45px] md:w-[125px] md:h-[55px] bg-[#41ff6b1a] rounded-3xl font-bold text-xl"><span>100</span><img class="h-[60%]" src="./assets/coin.png" alt="coin icon"></div>
-                <div class="badge w-[100px] h-[45px] md:w-[125px] md:h-[55px] bg-[#00A63E] rounded-3xl  text-xl text-white"><span>0</span> Copy</div>
+                <div  class="badge w-[100px] h-[45px] md:w-[125px] md:h-[55px] bg-[#41ff6b1a] rounded-3xl font-bold text-xl"><span id="fav-count">0</span><img class="h-[60%]" src="./assets/heart.png" alt="favorite icon"></div>
+                <div id="credit-count" class="badge w-[100px] h-[45px] md:w-[125px] md:h-[55px] bg-[#41ff6b1a] rounded-3xl font-bold text-xl"><span>100</span><img class="h-[60%]" src="./assets/coin.png" alt="coin icon"></div>
+                <div  class="badge w-[100px] h-[45px] md:w-[125px] md:h-[55px] bg-[#00A63E] rounded-3xl  text-xl text-white"><span id="copy-count">0</span> Copy</div>
             </div>
         </nav>
     </header>
@@ -40,10 +40,14 @@
                 <!-- all cards will be placed here -->
             </div>
         </div>
-        <div id="history-section" class="rounded-xl bg-white shadow hidden md:block min-h-[140px]">
-            <div class="flex justify-between px-5 pt-6 items-center">
+        <div id="history-section" class="rounded-xl bg-white shadow hidden md:block">
+            <div class="flex justify-between px-5 py-6 items-center">
                 <div><i class="fa-solid fa-clock-rotate-left"></i> <span class=" font-semibold"> Call History</span></div>
-                <button class="btn bg-[#00A63E] rounded-3xl  text-xl text-white w-[90px] h-[42px]">Clear</button>
+                <button id="clear-history-btn" class="btn bg-[#00A63E] rounded-3xl  text-xl text-white w-[90px] h-[42px]">Clear</button>
+            </div>
+            <div id="history-calls" class="flex flex-col px-5  gap-3">
+                <!-- call history will be placed here -->
+                
             </div>
         </div>
     </main>
@@ -60,24 +64,6 @@
     </div>
     
 <script src="./cards.js"></script>
-<script>
-    const historySection = document.getElementById('history-section');
-    const historyBtn = document.getElementById('history-btn');
-    const cardContainer = document.getElementById('card-container');
-    const homeBtn = document.getElementById('home-btn');
-    historyBtn.addEventListener('click', function() {
-        cardContainer.classList.add('hidden');
-        historySection.classList.remove('hidden');
-        historyBtn.classList.add('dock-active');
-        homeBtn.classList.remove('dock-active');
-    });
-    homeBtn.addEventListener('click', function() {
-        cardContainer.classList.remove('hidden');
-        historySection.classList.add('hidden');
-        historyBtn.classList.remove('dock-active');
-        homeBtn.classList.add('dock-active');
-    });
-
-</script>
+<script src="./index.js"></script>
 </body>
 </html>
