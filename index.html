@@ -11,7 +11,7 @@
 <body>
     <!-- header section -->
     <header class="px-15 py-5">
-        <nav class="flex justify-between items-center">
+        <nav class="flex flex-col gap-5 md:flex-row justify-between items-center">
             <div class="flex justify-between gap-3">
                 <div class="w-[90px] h-[90px]">
                     <a class="w-full h-full block" href="index.html"><img class="w-full h-full" src="./assets/logo.png" alt="Logo"></a>
@@ -34,14 +34,30 @@
     </section>
 
     <!-- main section -->
-    <main class="grid grid-cols-4 gap-7 px-15 py-10 bg-[#F5FFF6]">
-        <div class=" col-span-3">
-            <div id="cards-container" class="grid grid-cols-3 gap-7">
-                <!-- all cards will be here -->
+    <main class="grid md:grid-cols-3 xl:grid-cols-4 gap-7 px-15 py-10 bg-[#F5FFF6]">
+        <div class="md:col-span-2 xl:col-span-3">
+            <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+                <!-- all cards will be placed here -->
             </div>
         </div>
-        <div class="border-2 border-blue-500">right</div>
+        <div class="rounded-xl bg-white shadow">
+            <div class="flex justify-between px-5 pt-6 items-center">
+                <div><i class="fa-solid fa-clock-rotate-left"></i> <span class=" font-semibold"> Call History</span></div>
+                <button class="btn bg-[#00A63E] rounded-3xl  text-xl text-white w-[90px] h-[42px]">Clear</button>
+            </div>
+        </div>
     </main>
+    <div class="dock dock-xs md:hidden">
+        <button class="dock-active">
+          <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt"><polyline points="1 11 12 2 23 11" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><path d="m5,13v7c0,1.105.895,2,2,2h10c1.105,0,2-.895,2-2v-7" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></path><line x1="12" y1="22" x2="12" y2="18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></line></g></svg>
+        </button>
+        
+        <button class="">
+            <i class="size-[1.2em] fa-solid fa-clock-rotate-left"></i>
+          <!-- <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt"><polyline points="3 14 9 14 9 17 15 17 15 14 21 14" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></rect></g></svg> -->
+        </button>
+        
+      </div>
 <script src="./cards.js"></script>
 </body>
 </html>

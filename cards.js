@@ -82,17 +82,19 @@ for(const cardInfo of cardsInfo) {
                 <div class="w-[60px] h-[60px] bg-[${cardInfo.bgColor}] items-center flex justify-center rounded-2xl"><img class="w-[32px] h-[32px]" src=${cardInfo.icon} alt="emergency icon"></div>
                 <div><i class="fa-regular fa-heart text-2xl"></i></div>
             </div>
-            <div class="row my-3 h-[80px]">
+            <div class="row my-3">
                 <h3 class="font-bold text-2xl ">${cardInfo.title}</h3>
                 <p class=" text-xl">${cardInfo.description}</p>
             </div>
-            <div class="row my-3">
-                <p class=" text-3xl font-bold">${cardInfo.number}</p>
-                <div class="badge bg-[#F2F2F2] rounded-3xl">${cardInfo.category}</div>
-            </div>
-            <div class="row flex justify-between gap-2 mt-auto">
-                <button class="btn w-[50%] border-1 border-gray-300 rounded-xl bg-white text-gray-500"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn w-[50%] rounded-xl border-1 border-[#00A63E] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="row mt-auto">
+              <div class="row">
+                  <p class=" text-3xl font-bold">${cardInfo.number}</p>
+                  <div class="badge bg-[#F2F2F2] rounded-3xl">${cardInfo.category}</div>
+              </div>
+              <div class="row flex justify-between gap-2 mt-4">
+                  <button class="btn w-[50%] border-1 border-gray-300 rounded-xl bg-white text-gray-500"><i class="fa-regular fa-copy"></i> Copy</button>
+                  <button class="btn w-[50%] rounded-xl border-1 border-[#00A63E] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+              </div>
             </div>
         </div>
     `;
