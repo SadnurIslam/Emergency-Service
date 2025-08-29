@@ -92,8 +92,8 @@ for(const cardInfo of cardsInfo) {
                   <div class="badge bg-[#F2F2F2] rounded-3xl mt-2">${cardInfo.category}</div>
               </div>
               <div class="row flex justify-between gap-2 mt-4">
-                  <button  class="copy-btn btn w-[50%] border-1 border-gray-300 rounded-xl bg-white text-gray-500"><i class="fa-regular fa-copy"></i> Copy</button>
-                  <button id="" class="call-btn btn w-[50%] rounded-xl border-1 border-[#00A63E] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i> Call</button>
+                  <button  class="copy-btn btn w-[50%] border-1 border-gray-300 rounded-xl bg-white text-gray-500 hover:bg-gray-200"><i class="fa-regular fa-copy"></i> Copy</button>
+                  <button id="" class="call-btn btn w-[50%] rounded-xl hover:border-2 hover:border-green-500 border-1 border-[#00A63E] bg-[#00A63E] text-white hover:bg-green-500"><i class="fa-solid fa-phone"></i> Call</button>
               </div>
             </div>
         </div>
