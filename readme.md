@@ -16,11 +16,12 @@
 We can use document.createElement to a create a new html element. Then we can set attribute and styles to the element. We can also add some classList. We can also add html elements or text inside the created element using innerHTML/innerText. Then we can append the created element to a parent element using appendChild().
 <br>
 <b>Example: </b>
+<br>
 ```js
 const card = document.createElement('div');
 card.innerText = "This is a card";
 cardsContainer.appendChild(element);
-```
+
 <br><br>
 3.<b> What is Event Bubbling and how does it work?</b><br>
 <b>Ans:</b><br>
