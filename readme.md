@@ -18,8 +18,9 @@ We can use document.createElement to a create a new html element. Then we can se
 <b>Example: </b>
 ```js
 const card = document.createElement('div');
-element.innerText = "This is a card";
+card.innerText = "This is a card";
 cardsContainer.appendChild(element);
+```
 <br><br>
 3.<b> What is Event Bubbling and how does it work?</b><br>
 <b>Ans:</b><br>
@@ -31,7 +32,7 @@ Event bubbling means an event starts from the element where it happened and then
         <button>Click here</button>
     </div>
 </body>
-
+```
 
 Here clicking the <button> will trigger button click, then div click, and then body click.
 
