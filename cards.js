@@ -137,6 +137,7 @@ for(const cardInfo of cardsInfo) {
         alert(`Calling ${cardTitle} (${number})...`);
       } else {
         alert("Insufficient credit to make a call. Keep at least 20 credits.");
+        return;
       }
       const cardTitle = element.querySelector(".card-title").innerText.trim();
       const phoneNumber = element.querySelector(".phone-number").innerText.trim();
@@ -144,7 +145,7 @@ for(const cardInfo of cardsInfo) {
       const callLog = document.createElement('div');
       callLog.innerHTML = `
         <div>
-            <p class=" font-semibold lg:text-xl">${cardTitle}</p>
+            <p class=" font-semibold text-xl">${cardTitle}</p>
             <p>${phoneNumber}</p>
         </div>
         <div>
