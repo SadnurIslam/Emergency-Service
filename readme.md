@@ -17,9 +17,8 @@ We can use document.createElement to a create a new html element. Then we can se
 <br>
 <b>Example: </b>
 <br>
-```js
-const card = document.createElement('div');
-card.innerText = "This is a card";
+const card = document.createElement('div');<br>
+card.innerText = "This is a card";<br>
 cardsContainer.appendChild(element);
 
 <br><br>
