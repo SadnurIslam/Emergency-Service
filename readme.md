@@ -11,20 +11,23 @@ querySelectorAll: querySelectorAll returns all elements that matches the css sel
 Ans:
 We can use document.createElement to a create a new html element. Then we can set attribute and styles to the element. We can also add some classList. We can also add html elements or text inside the created element using innerHTML/innerText. Then we can append the created element to a parent element using appendChild().
 Example: 
+```js
 const card = document.createElement('div');
 element.innerText = "This is a card";
 cardsContainer.appendChild(element);
-
+```
 
 3. What is Event Bubbling and how does it work?
 Ans:
 Event bubbling means an event starts from the element where it happened and then moves up (propagates) to its parent elements until the top of the document.
 Example:
+```js
 <body>
     <div>
         <button>Click here</button>
     </div>
 </body>
+```
 Here clicking the <button> will trigger button click, then div click, and then body click.
 
 
