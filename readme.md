@@ -10,7 +10,7 @@
 <br>
 <b>querySelectorAll:</b> querySelectorAll returns all elements that matches the css selector as a NodeList. We can use forEach loop to access element here.
 <br>
-
+<br>
 2. <b>How do you create and insert a new element into the DOM?</b><br>
 <b>Ans:</b><br>
 We can use document.createElement to a create a new html element. Then we can set attribute and styles to the element. We can also add some classList. We can also add html elements or text inside the created element using innerHTML/innerText. Then we can append the created element to a parent element using appendChild().
@@ -20,8 +20,7 @@ We can use document.createElement to a create a new html element. Then we can se
 const card = document.createElement('div');
 element.innerText = "This is a card";
 cardsContainer.appendChild(element);
-```
-
+<br><br>
 3.<b> What is Event Bubbling and how does it work?</b><br>
 <b>Ans:</b><br>
 Event bubbling means an event starts from the element where it happened and then moves up (propagates) to its parent elements until the top of the document.
@@ -32,10 +31,11 @@ Event bubbling means an event starts from the element where it happened and then
         <button>Click here</button>
     </div>
 </body>
-```
+
+
 Here clicking the <button> will trigger button click, then div click, and then body click.
 
-
+<br><br>
 4. <b>What is Event Delegation in JavaScript? Why is it useful?</b><br>
 <b>Ans:</b><br>
 Event Delegation is a technique where we can attach a single event listener to a parent element, and handle events for its child elements using event bubbling. Instead of adding listeners to many elements, we can add one to the parent and detect the target using event.target.
@@ -47,7 +47,7 @@ Event Delegation is a technique where we can attach a single event listener to a
 <li> It makes code cleaner, readable and more efficient.</li>
 </ul>
 
-
+<br><br>
 5. <b>What is the difference between preventDefault() and stopPropagation() methods?</b><br>
 <b>Ans:</b><br>
 preventDefault stops the default browser action (like link navigation or form submission).
